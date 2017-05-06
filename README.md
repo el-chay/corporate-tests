@@ -1,9 +1,3 @@
-# corporate-tests
-
-Corporate organizations likes tests.
-I've been involved in so many interviews, questions starts to repeat ...
-And when something repeats too often then is the moment for automation :-D
-
 # Software license
 
 Copyright ©2017 Antonio Chay <antonio@chay.cl>
