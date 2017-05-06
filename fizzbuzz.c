@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[]){
+    if(argc < 2) return 1;
     for(int i = 1; i <= atoi(argv[1]); ++i){
         if(!(i % 15) ? printf("fizzbuzz\n") : 0) continue;
         if(!(i % 3) ? printf("fizz\n") : 0) continue;
