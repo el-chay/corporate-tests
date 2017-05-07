@@ -21,8 +21,7 @@ for k,v in b.iteritems():
 
 print max
 
-# Now, of course you can do:
+# Better way:
 from collections import Counter
 z = Counter(a)
 print z.most_common(1)
-# But I answer the first one anyways :-/
