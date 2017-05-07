@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
 
     int len = argc-1, *a = malloc(len*sizeof(int));
+    if(!a) return 1;
     for(int i = 1; i < argc; i++)
         a[i-1] = atoi(argv[i]);
 
@@ -17,5 +18,6 @@ int main(int argc, char *argv[])
     } while(e > b && swap(b++, e--));
 
     for(int i=0; i<len; i++) printf("[%d]:%d\n", i, a[i]);
+    free(a);
     return 0;
 }
