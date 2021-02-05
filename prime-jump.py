@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+# Prime Jump
+# For a given list with values, choose the greater-than path.
+# Jump through the list using the primer numbers ending in 3 or by 1 step.
+# Add the numbers found in the array, choose the greater-than step.
+# Ex:
+# [1,2,3] => 6
+# [1,2,3,4] => 5
+# [1,2,3,4,5] => 10
 from math import sqrt, pow
 
 def maxGameScore(cell):
