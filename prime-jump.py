@@ -3,20 +3,19 @@ from math import sqrt, pow
 
 def maxGameScore(cell):
     max_len = len(cell)+1
-    # "Fake" Erastosthenes array
-    eras_array = [True for i in range(0, max_len)]
+    # Get primes
+    erastos = [True for i in range(0, max_len)]
     for i in range(2, int(sqrt(max_len))+1):
-        if eras_array[i]:
+        if erastos[i]:
             c = 0; j = int(pow(i,2))+c*i
             while j < max_len:
-                eras_array[j] = False
+                erastos[j] = False
                 c = c+1
                 j = int(pow(i,2))+c*i
-    # Select primes ending in 3
     i = 2
     jumps = [1,]
     while i < max_len:
-        if eras_array[i] and str(i)[-1] == '3':
+        if erastos[i] and i%10 == 3:
             jumps.append(i)
         i += 1
 
